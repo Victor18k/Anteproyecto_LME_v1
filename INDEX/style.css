@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+color:#111;
+}
+
+.logo-img{
+width:100px;
+height:50px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.navbar{
+padding:10px 20px;
+}
+
+.navbar .nav-link{
+color:white !important;
+font-weight:500;
+padding:.6rem .9rem !important;
+border-radius:8px;
+transition:.3s;
+}
+
+.navbar .nav-link:hover{
+background:lightblue;
+color:black !important;
+}
+
+.dropdown-menu{
+border:none;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.dropdown-item:hover{
+background:#e8f7ff;
+}
+
+header{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:clamp(2rem,5vw,4rem);
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.1rem;
+opacity:.95;
+}
+
+.banner{
+background:url('fondo-campo-futbol-gradiente_23-2148995840.avif') center/cover no-repeat;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.banner h2{
+font-family:'Playfair Display',serif;
+font-size:clamp(2rem,5vw,3.5rem);
+margin-bottom:10px;
+}
+
+.banner p{
+max-width:700px;
+margin:auto;
+font-size:1.1rem;
+}
+
+#mundiales h2.text-center{
+font-family:'Playfair Display',serif;
+font-size:2.2rem;
+}
+
+.decada{
+margin-top:55px;
+}
+
+.decada h2{
+margin-bottom:20px;
+border-left:5px solid #00bfff;
+padding-left:12px;
+font-size:1.8rem;
+}
+
+.card{
+background:#d9dbe0;
+border:none !important;
+border-radius:16px !important;
+overflow:hidden;
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+transition:transform .3s, box-shadow .3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 28px rgba(0,0,0,.18);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#d3d3d3;
+padding:10px;
+}
+
+.card h3{
+font-size:1.25rem;
+padding:12px 12px 0;
+margin:0;
+}
+
+.card p{
+padding:10px 12px;
+margin:0;
+font-size:.95rem;
+color:#222;
+}
+
+.card a{
+display:block;
+margin:12px;
+padding:10px;
+text-align:center;
+background:#80c0d6;
+color:black;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+transition:.3s;
+}
+
+.card a:hover{
+background:#009acd;
+color:white;
+}
+
+.footer{
+background:white;
+margin-top:60px;
+padding:35px 20px;
+border-radius:24px 24px 0 0;
+box-shadow:0 -4px 10px rgba(0,0,0,.06);
+}
+
+.footer-titulo{
+text-align:center;
+font-size:1.3rem;
+font-weight:600;
+margin-bottom:18px;
+}
+
+.redes{
+display:flex;
+justify-content:center;
+gap:22px;
+flex-wrap:wrap;
+margin-bottom:15px;
+}
+
+.redes img{
+width:42px;
+height:42px;
+object-fit:cover;
+border-radius:50%;
+transition:transform .3s;
+}
+
+.redes img:hover{
+transform:scale(1.15);
+}
+
+.copyright{
+text-align:center;
+font-size:.9rem;
+color:#555;
+}
+
+@media (max-width:992px){
+.navbar .nav-link{margin:4px 0;}
+}
+
+@media (max-width:768px){
+header{padding:35px 15px;}
+.banner{padding:65px 15px;}
+.card img{height:180px;}
+.decada h2{font-size:1.5rem;}
+#mundiales h2.text-center{font-size:1.8rem;}
+}
+
+@media (max-width:576px){
+.logo-img{width:85px;height:42px;}
+.card h3{font-size:1.1rem;}
+.card p{font-size:.9rem;}
+}

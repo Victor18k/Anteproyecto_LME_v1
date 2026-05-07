@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:'Poppins', sans-serif;
+    background-image:url(../IMG/fondo4.webp);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align:center;
+    padding:20px;
+    color:#111;
+}
+
+/* TITULOS */
+h1.titulo,
+.informacion,
+h1.titulo2,
+h1.Extras{
+    font-family:'Playfair Display', serif;
+    background:lightblue;
+    padding:20px;
+    border-radius:30px;
+    width:90%;
+    max-width:1420px;
+    margin:20px auto;
+    border:5px solid black;
+}
+
+/* ENCABEZADO */
+.encabezado img{
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+/* CONTENEDORES */
+.cuadro1,
+.cuadro2,
+.cuadro3{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:20px;
+    padding-bottom:40px;
+}
+
+/* CAJAS */
+.primera_selec_campeon,
+.poster_oficial,
+.trofeo,
+.balon_oficial,
+.album_cromos,
+.participantes,
+.estadisticas,
+.estadios,
+.semifinales,
+.final,
+.cancion_oficial,
+.mascota,
+.goleadores,
+.Ubicaciones{
+    background-color:whitesmoke;
+    border:5px solid black;
+    border-radius:20px;
+    padding:15px;
+    flex:1 1 400px;
+    max-width:600px;
+    min-height:auto;
+}
+
+/* AJUSTES ESPECIALES */
+.estadios{
+    flex:1 1 100%;
+    max-width:1250px;
+}
+
+.semifinales{
+    flex:1 1 100%;
+    max-width:1200px;
+}
+
+.final{
+    max-width:700px;
+}
+
+.goleadores,
+.estadisticas{
+    text-align:left;
+}
+
+.Ubicaciones{
+    max-width:470px;
+}
+
+/* IMAGENES */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:15px;
+}
+
+/* TARJETAS ESTADIOS */
+.fila-estadios{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    width:300px;
+    background:rgb(19,211,19);
+    border-radius:20px;
+    border:5px solid rgba(90,44,61,0.833);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    background:black;
+}
+
+.card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    background-color:whitesmoke;
+    border-radius:20px;
+    border:5px solid black;
+    padding:30px;
+    margin-top:40px;
+}
+
+.footer-titulo{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-bottom:15px;
+}
+
+.redes img{
+    width:40px;
+    transition:0.3s;
+}
+
+.redes img:hover{
+    transform:scale(1.2);
+}
+
+.copyright{
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .primera_selec_campeon,
+    .poster_oficial,
+    .trofeo,
+    .balon_oficial,
+    .album_cromos,
+    .participantes,
+    .estadisticas,
+    .semifinales,
+    .final,
+    .cancion_oficial,
+    .mascota,
+    .goleadores,
+    .Ubicaciones{
+        flex:1 1 100%;
+        max-width:95%;
+    }
+
+    .card{
+        width:95%;
+    }
+}

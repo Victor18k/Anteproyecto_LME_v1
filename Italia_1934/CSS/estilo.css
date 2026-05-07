@@ -1,0 +1,389 @@
+/* =======================================================
+   GOOGLE FONTS
+======================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* =======================================================
+   RESET GENERAL
+======================================================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    text-align:center;
+
+    background-image:url(../IMG/fondo4.webp);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+
+    animation:fadeBody 1s ease;
+}
+
+/* =======================================================
+   ANIMACIONES
+======================================================= */
+@keyframes fadeBody{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =======================================================
+   TITULOS PRINCIPALES
+======================================================= */
+h1.titulo,
+h1.titulo2,
+h1.Extras,
+.informacion{
+    width:90%;
+    max-width:1420px;
+
+    margin:25px auto;
+    padding:20px;
+
+    border:5px solid black;
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#198754,#d8f7e3);
+
+    font-family:'Playfair Display', serif;
+    color:#111;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    animation:aparecer 1s ease;
+}
+
+/* =======================================================
+   ENCABEZADO
+======================================================= */
+.encabezado img{
+    width:90%;
+    max-width:700px;
+
+    margin-top:20px;
+    border-radius:20px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+.encabezado img:hover{
+    transform:scale(1.03);
+}
+
+/* =======================================================
+   CONTENEDORES FLEX
+======================================================= */
+.cuadro1,
+.cuadro2,
+.cuadro3{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+
+    padding:20px;
+    margin-top:10px;
+    padding-bottom:40px;
+}
+
+/* =======================================================
+   TARJETAS GENERALES
+======================================================= */
+.primera_selec_campeon,
+.poster_oficial,
+.trofeo,
+.album_cromos,
+.balon_oficial,
+.participantes,
+.estadisticas,
+.estadios,
+.semifinales,
+.final,
+.datos_adicionales{
+    padding:15px;
+
+    border:5px solid black;
+    border-radius:20px;
+
+    background:rgba(255,255,255,.94);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+    transition:.35s ease;
+
+    animation:aparecer 1s ease;
+}
+
+.primera_selec_campeon:hover,
+.poster_oficial:hover,
+.trofeo:hover,
+.album_cromos:hover,
+.balon_oficial:hover,
+.participantes:hover,
+.estadisticas:hover,
+.estadios:hover,
+.semifinales:hover,
+.final:hover,
+.datos_adicionales:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 20px 35px rgba(0,0,0,.25);
+}
+
+/* =======================================================
+   MEDIDAS PERSONALIZADAS
+======================================================= */
+.primera_selec_campeon{
+    width:600px;
+    min-height:400px;
+}
+
+.poster_oficial,
+.trofeo{
+    width:300px;
+    min-height:400px;
+}
+
+.balon_oficial{
+    width:300px;
+    min-height:350px;
+}
+
+.album_cromos{
+    width:400px;
+    min-height:300px;
+}
+
+.participantes{
+    width:500px;
+    min-height:400px;
+}
+
+.estadisticas{
+    width:420px;
+    min-height:400px;
+    text-align:left;
+}
+
+.semifinales,
+.final{
+    width:600px;
+    min-height:400px;
+}
+
+.datos_adicionales{
+    width:850px;
+    text-align:left;
+}
+
+/* =======================================================
+   IMAGENES GENERALES
+======================================================= */
+img{
+    max-width:100%;
+    border-radius:15px;
+}
+
+/* =======================================================
+   ESTADIOS
+======================================================= */
+.estadios{
+    width:100%;
+    max-width:1300px;
+}
+
+.fila-estadios{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+
+    padding:20px;
+}
+
+.card{
+    width:280px;
+    overflow:hidden;
+
+    border-radius:20px;
+    border:5px solid #146c43;
+
+    background:linear-gradient(135deg,#198754,#74d69b);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.20);
+    transition:.4s ease;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:170px;
+
+    object-fit:cover;
+    background:black;
+}
+
+.card p{
+    padding:12px;
+    font-weight:bold;
+    color:white;
+}
+
+/* =======================================================
+   LISTAS
+======================================================= */
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+/* =======================================================
+   FOOTER
+======================================================= */
+.footer{
+    margin:40px 20px;
+    padding:30px;
+
+    border:5px solid black;
+    border-radius:20px;
+
+    background:rgba(255,255,255,.95);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+}
+
+.footer-titulo{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.redes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+
+    margin-bottom:15px;
+}
+
+.redes img{
+    width:35px;
+    transition:.3s ease;
+}
+
+.redes img:hover{
+    transform:translateY(-5px) scale(1.2) rotate(5deg);
+}
+
+.copyright{
+    font-size:14px;
+}
+
+/* =======================================================
+   RESPONSIVE TABLET
+======================================================= */
+@media(max-width:992px){
+
+    .primera_selec_campeon,
+    .poster_oficial,
+    .trofeo,
+    .album_cromos,
+    .balon_oficial,
+    .participantes,
+    .estadisticas,
+    .semifinales,
+    .final,
+    .datos_adicionales{
+        width:90%;
+        min-height:auto;
+    }
+
+    .card{
+        width:45%;
+    }
+}
+
+/* =======================================================
+   RESPONSIVE MOVIL
+======================================================= */
+@media(max-width:768px){
+
+    h1.titulo,
+    h1.titulo2,
+    h1.Extras,
+    .informacion{
+        font-size:24px;
+        padding:15px;
+    }
+
+    .card{
+        width:95%;
+    }
+
+    .redes{
+        gap:18px;
+    }
+
+    .redes img{
+        width:30px;
+    }
+
+    li{
+        font-size:15px;
+    }
+}
+
+/* =======================================================
+   RESPONSIVE PEQUEÑO
+======================================================= */
+@media(max-width:480px){
+
+    h1.titulo,
+    h1.titulo2,
+    h1.Extras,
+    .informacion{
+        font-size:20px;
+    }
+
+    .footer-titulo{
+        font-size:18px;
+    }
+
+    .copyright{
+        font-size:12px;
+    }
+}
