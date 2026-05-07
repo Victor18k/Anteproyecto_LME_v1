@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* BODY */
+body{
+    font-family:'Poppins', sans-serif;
+    background-image:url(../IMG/fondo4.webp);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align:center;
+    color:#111;
+}
+
+/* TITULOS */
+h1.titulo,
+.informacion,
+h1.titulo2,
+h1.Extras{
+    font-family:'Playfair Display', serif;
+    background:linear-gradient(135deg,#5dade2,#d6eaf8);
+    padding:20px;
+    border-radius:30px;
+    width:90%;
+    max-width:1420px;
+    margin:25px auto;
+    border:5px solid black;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    animation:entradaTop 1s ease;
+}
+
+/* ENCABEZADO */
+.encabezado img{
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+    transition:.4s;
+}
+
+.encabezado img:hover{
+    transform:scale(1.02);
+}
+
+/* SECCIONES */
+.cuadro1,
+.cuadro2,
+.cuadro3{
+    margin-top:25px;
+    padding-bottom:40px;
+}
+
+/* TARJETAS GENERALES */
+.primera_selec_campeon,
+.poster_oficial,
+.trofeo,
+.balon_oficial,
+.album_cromos,
+.participantes,
+.estadisticas,
+.estadios,
+.semifinales,
+.final,
+.cancion_oficial,
+.mascota,
+.goleadores,
+.Ubicaciones{
+    border-radius:22px;
+    border:5px solid black;
+    background:rgba(255,255,255,.94);
+    padding:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+    transition:.35s ease;
+}
+
+.primera_selec_campeon:hover,
+.poster_oficial:hover,
+.trofeo:hover,
+.balon_oficial:hover,
+.album_cromos:hover,
+.participantes:hover,
+.estadisticas:hover,
+.estadios:hover,
+.semifinales:hover,
+.final:hover,
+.cancion_oficial:hover,
+.goleadores:hover,
+.Ubicaciones:hover{
+    transform:translateY(-8px);
+    box-shadow:0 16px 28px rgba(0,0,0,.25);
+}
+
+/* MEDIDAS */
+.primera_selec_campeon{min-height:400px;}
+.poster_oficial{min-height:400px;}
+.trofeo{min-height:400px;}
+.balon_oficial{min-height:300px;}
+.album_cromos{min-height:300px;}
+.participantes{min-height:400px;}
+.estadisticas{
+    min-height:400px;
+    text-align:left;
+}
+.semifinales,
+.final{
+    min-height:400px;
+}
+.cancion_oficial{
+    min-height:370px;
+}
+.goleadores{
+    min-height:400px;
+    text-align:left;
+}
+
+/* IMAGENES GENERALES */
+img{
+    max-width:100%;
+    height:auto;
+    border-radius:16px;
+}
+
+/* ESTADIOS */
+.estadios{
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.card{
+    min-width:300px;
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
+    border-radius:20px;
+    border:4px solid rgba(0,0,0,.75);
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:scale(1.04);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    background:#000;
+}
+
+.card p{
+    padding:12px;
+    font-weight:700;
+    margin:0;
+    color:white;
+}
+
+/* UBICACIONES */
+.Ubicaciones{
+    max-width:520px;
+    margin:auto;
+}
+
+.Ubicaciones img{
+    width:100%;
+    max-width:450px;
+    height:auto;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* LISTAS */
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+/* FOOTER */
+.footer{
+    background:rgba(255,255,255,.95);
+    border-radius:20px;
+    border:5px solid black;
+    padding:30px;
+    margin:40px 20px 20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.footer-titulo{
+    font-size:22px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-bottom:15px;
+}
+
+.redes img{
+    width:42px;
+    transition:.3s;
+    border-radius:50%;
+}
+
+.redes img:hover{
+    transform:scale(1.25) rotate(8deg);
+}
+
+.copyright{
+    font-size:14px;
+    opacity:.8;
+}
+
+/* ANIMACIONES */
+@keyframes entradaTop{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+
+    h1.titulo,
+    .informacion,
+    h1.titulo2,
+    h1.Extras{
+        font-size:1.8rem;
+    }
+
+    .estadisticas,
+    .goleadores{
+        text-align:left;
+    }
+}
+
+@media(max-width:768px){
+
+    h1.titulo,
+    .informacion,
+    h1.titulo2,
+    h1.Extras{
+        width:95%;
+        padding:15px;
+        font-size:1.5rem;
+    }
+
+    .card{
+        min-width:100%;
+    }
+
+    .footer{
+        padding:20px;
+    }
+
+    .redes{
+        gap:18px;
+    }
+
+    .redes img{
+        width:38px;
+    }
+}
+
+@media(max-width:576px){
+
+    body{
+        font-size:15px;
+    }
+
+    .footer-titulo{
+        font-size:18px;
+    }
+
+    .copyright{
+        font-size:12px;
+    }
+}

@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-image:url(../IMG/fondo4.webp);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align:center;
+}
+
+
+h1.titulo, .informacion, h1.titulo2, h1.Extras{
+    font-family:'Playfair Display', serif;
+    background-color:lightblue;
+    padding:20px;
+    border-radius:30px;
+    width:90%;
+    max-width:1420px;
+    margin:20px auto;
+    border:5px solid black;
+}
+
+
+.encabezado img{
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+}
+
+
+.cuadro1,
+.cuadro2,
+.cuadro3{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding-bottom:40px;
+}
+
+
+.primera_selec_campeon, .poster_oficial, .trofeo, .balon_oficial,.album_cromos, .participantes, .estadisticas, .estadios, .semifinales,
+.final,
+.datos_adicionales{
+    border-radius:20px;
+    border:5px solid black;
+    background-color:whitesmoke;
+    padding:10px;
+}
+
+
+.primera_selec_campeon{width:600px; min-height:400px;}
+.poster_oficial{width:300px; min-height:400px;}
+.trofeo{width:300px; min-height:400px;}
+.balon_oficial{width:300px; min-height:350px;}
+.album_cromos{width:400px; min-height:300px;}
+.participantes{width:500px; min-height:400px;}
+.estadisticas{width:400px; min-height:400px; text-align:left;}
+.semifinales{width:600px; min-height:400px;}
+.final{width:600px; min-height:400px;}
+.datos_adicionales{width:300px; min-height:400px;}
+
+.datos_adicionales{
+    width: 800px;
+   
+    border-radius: 20px;
+    border: 5px solid black;
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: left;
+    height: auto;
+}
+
+.estadios{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.fila-estadios{
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 30px;         
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    min-width: 300px;
+    background: rgb(19, 211, 19);
+    border-radius: 20px;
+    border: 5px solid rgba(90, 44, 61, 0.833);
+    overflow: hidden;
+
+}
+
+.card img{
+    width: 100%;
+    height: 170px;
+    object-fit: contain;  
+    background-color: black; 
+}
+
+.card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    background-color:whitesmoke;
+    border-radius:20px;
+    border:5px solid black;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.footer-titulo{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.redes img{
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+}
+
+.copyright{
+    font-size: 14px;
+}
+
