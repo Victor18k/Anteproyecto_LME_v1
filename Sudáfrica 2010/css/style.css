@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-image:url(../IMG/fondo4.webp);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align:center;
+}
+
+/* ===== TITULOS ===== */
+h1.titulo,
+.informacion,
+h1.titulo2,
+h1.Extras{
+    font-family:'Playfair Display', serif;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color:white;
+    padding:20px;
+    border-radius:30px;
+    width:90%;
+    max-width:1420px;
+    margin:20px auto;
+    border:3px solid rgba(0,0,0,0.4);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    transition:0.3s ease;
+}
+
+h1.titulo:hover,
+h1.titulo2:hover,
+h1.Extras:hover{
+    transform:scale(1.02);
+}
+
+/* ===== ENCABEZADO ===== */
+.encabezado img{
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.6);
+    transition:0.4s ease;
+}
+
+.encabezado img:hover{
+    transform:scale(1.03);
+}
+
+/* ===== CUADROS ===== */
+.cuadro1,
+.cuadro2,
+.cuadro3{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding-bottom:40px;
+}
+
+/* ===== CARDS BASE (ENERGÍA 2010) ===== */
+.primera_selec_campeon,
+.poster_oficial,
+.trofeo,
+.balon_oficial,
+.album_cromos,
+.participantes,
+.estadisticas,
+.semifinales,
+.final,
+.cancion_oficial,
+.mascota,
+.goleadores,
+.estadios{
+
+    border-radius:20px;
+    border:2px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s ease;
+}
+
+/* hover dinámico */
+.primera_selec_campeon:hover,
+.poster_oficial:hover,
+.trofeo:hover,
+.balon_oficial:hover,
+.album_cromos:hover,
+.participantes:hover,
+.estadisticas:hover,
+.semifinales:hover,
+.final:hover,
+.cancion_oficial:hover,
+.mascota:hover,
+.goleadores:hover,
+.estadios:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(255,81,47,0.4);
+}
+
+/* ===== TAMAÑOS ORIGINALES ===== */
+.primera_selec_campeon{width:600px; min-height:400px;}
+.poster_oficial{width:300px; min-height:400px;}
+.trofeo{width:300px; min-height:400px;}
+.balon_oficial{width:300px; min-height:350px;}
+.album_cromos{width:400px; min-height:300px;}
+.participantes{width:500px; min-height:400px;}
+.estadisticas{width:400px; min-height:400px; text-align:left;}
+.semifinales{width:600px; min-height:400px;}
+.final{width:600px; min-height:400px;}
+.cancion_oficial{width:400px; min-height:370px;}
+.mascota{width:600px; min-height:400px;}
+
+/* ===== GOLEADORES ===== */
+.goleadores{
+    width:400px;
+    padding:20px;
+    text-align:left;
+    height:auto;
+}
+
+/* ===== ESTADIOS ===== */
+.estadios{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.fila-estadios{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:20px;
+    justify-content:center;
+}
+
+/* CARD ESTADIOS (más vibrante 2010) */
+.card{
+    min-width:300px;
+    background:linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius:20px;
+    border:2px solid rgba(255,255,255,0.3);
+    overflow:hidden;
+    color:white;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:contain;
+    background-color:black;
+}
+
+.card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* ===== IMÁGENES ===== */
+img{
+    max-width:100%;
+    height:auto;
+    border-radius:15px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    border:3px solid black;
+    padding:30px;
+    margin-top:40px;
+}
+
+.footer-titulo{
+    font-size:22px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+}
+
+.redes img{
+    width:40px;
+    transition:0.3s;
+}
+
+.redes img:hover{
+    transform:scale(1.2) rotate(5deg);
+}
+
+.copyright{
+    font-size:14px;
+    background-color:aliceblue;
+    padding:5px;
+    border-radius:10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
+    .primera_selec_campeon,
+    .semifinales,
+    .final,
+    .mascota,
+    .participantes{
+        width:90%;
+    }
+
+    .poster_oficial,
+    .trofeo,
+    .balon_oficial,
+    .album_cromos,
+    .estadisticas,
+    .cancion_oficial,
+    .goleadores{
+        width:90%;
+    }
+}
