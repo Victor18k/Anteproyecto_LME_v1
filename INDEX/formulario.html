@@ -10,67 +10,139 @@
 </head>
 
 <body>
-    <nav>
-        <div id="logo">
-            <img src="" alt="">
-        </div>
-        <label for="drop" class="toggle icono">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </label>
-        <input type="checkbox" id="drop">
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li>
-                <label for="drop-2" class="toggle">Decadas +</label>
-                <a href="index.html#mundiales"> Decadas +</a>
-                <input type="checkbox" id="drop-2">
-                <ul>
-                    <li><a href="">2020</a></li>
-                    <li>
-                        <label for="drop-3" class="toggle">Años +</label>
-                        <a href="index.html#2020">2020 +</a>
-                        <input type="checkbox" id="drop-3">
-                        <ul>
-                            <li><a href="#">2026</a></li>
-                            <li><a href="#">2022</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg py-2">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="LOGO FIFA.webp" class="logo-img" alt="Logo FIFA">
+                <span class="fw-bold fs-5">Mundiales de Fútbol</span>
+            </a>
+
+            <!-- BOTÓN MOBILE -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse mt-3 mt-lg-0" id="menu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 text-center">
+
+                    <!-- INICIO -->
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="index.html">Inicio</a>
+                    </li>
+
+                    <!-- DÉCADAS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">
+                            Décadas
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark shadow border-0">
+
+                            <!-- 2020 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">2020</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+
+                                    <li><a class="dropdown-item" href="qatar2022.html">2022</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 2010 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">2010</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="rusia2018.html">2018</a></li>
+                                    <li><a class="dropdown-item" href="brasil2014.html">2014</a></li>
+                                    <li><a class="dropdown-item" href="sudafrica2010.html">2010</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 2000 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">2000</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="alemania2006.html">2006</a></li>
+                                    <li><a class="dropdown-item" href="coreajapon2002.html">2002</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1990 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1990</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="francia1998.html">1998</a></li>
+                                    <li><a class="dropdown-item" href="usa1994.html">1994</a></li>
+                                    <li><a class="dropdown-item" href="italia1990.html">1990</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1980 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1980</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="espana1982.html">España 1982</a></li>
+                                    <li><a class="dropdown-item" href="mexico1986.html">México 1986</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1970 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1970</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="mexico1970.html">México 1970</a></li>
+                                    <li><a class="dropdown-item" href="alemania1974.html">Alemania 1974</a></li>
+                                    <li><a class="dropdown-item" href="argentina1978.html">Argentina 1978</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1960 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1960</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="chile1962.html">Chile 1962</a></li>
+                                    <li><a class="dropdown-item" href="inglaterra1966.html">Inglaterra 1966</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1950 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1950</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="brasil1950.html">Brasil 1950</a></li>
+                                    <li><a class="dropdown-item" href="suiza1954.html">Suiza 1954</a></li>
+                                    <li><a class="dropdown-item" href="suecia1958.html">Suecia 1958</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 1930 -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">1930</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="uruguay1930.html">Uruguay 1930</a></li>
+                                    <li><a class="dropdown-item" href="italia1934.html">Italia 1934</a></li>
+                                    <li><a class="dropdown-item" href="francia1938.html">Francia 1938</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
                     </li>
-                    <li><a href="index.html#2010">2010</a></li>
-                    <li>
-                        <label for="drop-3" class="toggle">Años +</label>
-                        <a href="#">Años +</a>
-                        <input type="checkbox" id="drop-3">
-                        <ul>
-                            <li><a href="#">2018</a></li>
-                            <li><a href="#">2014</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="creadores.html">Creadores</a>
                     </li>
-                    <li><a href="index.html#2000">2000</a></li>
-                    <li>
-                        <label for="drop-3" class="toggle">Años +</label>
-                        <a href="#">Años +</a>
-                        <input type="checkbox" id="drop-3">
-                        <ul>
-                            <li><a href="#">2010</a></li>
-                            <li><a href="#">2006</a></li>
-                            <li><a href="#">2002</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="formulario.html">Contactenos</a>
                     </li>
-                    <li><a href="index.html#1990">1990</a></li>
-                    <li>
-                        <label for="drop-3" class="toggle">Años +</label>
-                        <a href="#">Años +</a>
-                        <input type="checkbox" id="drop-3">
-                        <ul>
-                            <li><a href="#">1998</a></li>
-                            <li><a href="#">1994</a></li>
-                            <li><a href="#">1990</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
-            </li>
-            <li><a href="creadores.html">Creadores</a></li>
-        </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="container my-5">
@@ -103,6 +175,12 @@
                     <input class="form-check-input" type="radio" name="genero" id="fem">
                     <label class="form-check-label" for="fem">Femenino</label>
                 </div>
+            </div>
+
+            <!-- Área de texto (nuevo) -->
+            <div class="mb-3">
+                <label class="form-label">Comentarios</label>
+                <textarea class="form-control" rows="4" placeholder="Escribe aquí tu mensaje..." required></textarea>
             </div>
 
             <!-- Checkbox -->
