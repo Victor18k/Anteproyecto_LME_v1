@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+label.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1f44;
+    color: goldenrod;
+}
+
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #0a1f44;
+}
+
+nav a {
+    display: block;
+    padding: 0 20px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: goldenrod;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: block;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 480px) {
+
+    /*ESTILOS PARA CELULAR*/
+    nav {
+        margin: 0;
+    }
+
+    #logo {
+        display: inline-block;
+        padding: 0 0 0 20px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    label.toggle {
+        display: block;
+        background-color: #0a1f44;
+        padding: 0 20px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    label.icono {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-left: 1px solid white;
+        display: inline-block;
+        float: right;
+    }
+
+    .toogle:hover {
+        background-color: goldenrod;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+        width: 100%;
+    }
+
+    .toggle+a {
+        display: none;
+    }
+
+    nav ul ul {
+        float: none;
+        position: relative;
+        color: #ffffff;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+    }
+
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav:hover,
+    nav ul ul ul a {
+        background-color: goldenrod;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: goldenrod;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768) {
+
+    /*ESTILOS PARA CELULAR*/
+    nav {
+        margin: 0;
+    }
+
+    #logo {
+        display: inline-block;
+        padding: 0 0 0 20px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    label.toggle {
+        display: block;
+        background-color: #0a1f44;
+        padding: 0 20px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    label.icono {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-left: 1px solid white;
+        display: inline-block;
+        float: right;
+    }
+
+    .toogle:hover {
+        background-color: goldenrod;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+        width: 100%;
+    }
+
+    .toggle+a {
+        display: none;
+    }
+
+    nav ul ul {
+        float: none;
+        position: relative;
+        color: #ffffff;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+    }
+
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav:hover,
+    nav ul ul ul a {
+        background-color: goldenrod;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: goldenrod;
+    }
+}
