@@ -1,288 +1,209 @@
-html {
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+
+html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+color:#111;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.logo-img{
+width:100px;
+height:50px;
+border-radius:10px;
+object-fit:cover;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f4f4f4;
-    color: #111;
+.navbar{
+padding:10px 20px;
 }
 
-label.toggle,
-[id^=drop] {
-    display: none;
+.navbar .nav-link{
+color:white !important;
+font-weight:500;
+padding:.6rem .9rem !important;
+border-radius:8px;
+transition:.3s;
 }
 
-nav {
-    margin: 0;
-    padding: 0;
-    background-color: #0a1f44;
-    color: goldenrod;
+.navbar .nav-link:hover{
+background:lightblue;
+color:black !important;
 }
 
-#logo {
-    display: block;
-    padding: 0 30px;
-    float: left;
-    font-size: 20px;
-    line-height: 60px;
+.dropdown-menu{
+border:none;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
 }
 
-nav ul {
-    float: right;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
+.dropdown-item:hover{
+background:#e8f7ff;
 }
 
-nav ul li {
-    margin: 0px;
-    display: inline-block;
-    float: left;
-    background-color: #0a1f44;
+header{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:50px 20px;
 }
 
-nav a {
-    display: block;
-    padding: 0 20px;
-    color: #FFF;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
+header h1{
+font-family:'Playfair Display',serif;
+font-size:clamp(2rem,5vw,4rem);
+margin-bottom:10px;
 }
 
-nav a:hover {
-    background-color: goldenrod;
+header p{
+font-size:1.1rem;
+opacity:.95;
 }
 
-nav ul ul {
-    display: none;
-    position: absolute;
-    top: 60px;
+.banner{
+background:url('fondo-campo-futbol-gradiente_23-2148995840.avif') center/cover no-repeat;
+color:white;
+text-align:center;
+padding:90px 20px;
 }
 
-nav ul li:hover>ul {
-    display: block;
+.banner h2{
+font-family:'Playfair Display',serif;
+font-size:clamp(2rem,5vw,3.5rem);
+margin-bottom:10px;
 }
 
-nav ul ul li {
-    width: 170px;
-    float: none;
-    display: block;
-    position: relative;
+.banner p{
+max-width:700px;
+margin:auto;
+font-size:1.1rem;
 }
 
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
+#mundiales h2.text-center{
+font-family:'Playfair Display',serif;
+font-size:2.2rem;
 }
 
-nav:after {
-    content: "";
-    display: block;
-    clear: both;
+.decada{
+margin-top:55px;
 }
 
-.img-creador {
-    width: 100%;
-    height: 460px;       /* tamaño fijo */
-    object-fit: cover;   /* recorta la imagen sin deformarla */
+.decada h2{
+margin-bottom:20px;
+border-left:5px solid #00bfff;
+padding-left:12px;
+font-size:1.8rem;
 }
 
-@media screen and (max-width: 480px) {
-
-    /*ESTILOS PARA CELULAR*/
-    nav {
-        margin: 0;
-    }
-
-    #logo {
-        display: inline-block;
-        padding: 0 0 0 20px;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        width: 100%;
-        border-top: 1px solid white;
-    }
-
-    label.toggle {
-        display: block;
-        background-color: #0a1f44;
-        padding: 0 20px;
-        color: #FFF;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    label.icono {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-left: 1px solid white;
-        display: inline-block;
-        float: right;
-    }
-
-    .toogle:hover {
-        background-color: goldenrod;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    [id^=drop]:checked+ul {
-        display: block;
-        width: 100%;
-    }
-
-    .toggle+a {
-        display: none;
-    }
-
-    nav ul ul {
-        float: none;
-        position: relative;
-        color: #ffffff;
-    }
-
-    nav ul ul li {
-        display: block;
-        width: 100%;
-    }
-
-    nav ul ul ul li {
-        position: static;
-    }
-
-    nav ul ul li:hover>ul,
-    nav ul li:hover>ul {
-        display: none;
-    }
-
-    nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-    }
-
-    nav ul ul ul a {
-        padding: 0 80px;
-    }
-
-    nav:hover,
-    nav ul ul ul a {
-        background-color: goldenrod;
-    }
-
-    nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: goldenrod;
-    }
+.card{
+background:#d9dbe0;
+border:none !important;
+border-radius:16px !important;
+overflow:hidden;
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+transition:transform .3s, box-shadow .3s;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768) {
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 28px rgba(0,0,0,.18);
+}
 
-    /*ESTILOS PARA CELULAR*/
-    nav {
-        margin: 0;
-    }
+.card img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#d3d3d3;
+padding:10px;
+}
 
-    #logo {
-        display: inline-block;
-        padding: 0 0 0 20px;
-        text-align: center;
-    }
+.card h3{
+font-size:1.25rem;
+padding:12px 12px 0;
+margin:0;
+}
 
-    nav ul li {
-        display: block;
-        width: 100%;
-        border-top: 1px solid white;
-    }
+.card p{
+padding:10px 12px;
+margin:0;
+font-size:.95rem;
+color:#222;
+}
 
-    label.toggle {
-        display: block;
-        background-color: #0a1f44;
-        padding: 0 20px;
-        color: #FFF;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-    }
+.card a{
+display:block;
+margin:12px;
+padding:10px;
+text-align:center;
+background:#80c0d6;
+color:black;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+transition:.3s;
+}
 
-    label.icono {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-left: 1px solid white;
-        display: inline-block;
-        float: right;
-    }
+.card a:hover{
+background:#009acd;
+color:white;
+}
 
-    .toogle:hover {
-        background-color: goldenrod;
-    }
+.footer{
+background:white;
+margin-top:60px;
+padding:35px 20px;
+border-radius:24px 24px 0 0;
+box-shadow:0 -4px 10px rgba(0,0,0,.06);
+}
 
-    .menu {
-        display: none;
-    }
+.footer-titulo{
+text-align:center;
+font-size:1.3rem;
+font-weight:600;
+margin-bottom:18px;
+}
 
-    [id^=drop]:checked+ul {
-        display: block;
-        width: 100%;
-    }
+.redes{
+display:flex;
+justify-content:center;
+gap:22px;
+flex-wrap:wrap;
+margin-bottom:15px;
+}
 
-    .toggle+a {
-        display: none;
-    }
+.redes img{
+width:42px;
+height:42px;
+object-fit:cover;
+border-radius:50%;
+transition:transform .3s;
+}
 
-    nav ul ul {
-        float: none;
-        position: relative;
-        color: #ffffff;
-    }
+.redes img:hover{
+transform:scale(1.15);
+}
 
-    nav ul ul li {
-        display: block;
-        width: 100%;
-    }
+.copyright{
+text-align:center;
+font-size:.9rem;
+color:#555;
+}
 
-    nav ul ul ul li {
-        position: static;
-    }
+@media (max-width:992px){
+.navbar .nav-link{margin:4px 0;}
+}
 
-    nav ul ul li:hover>ul,
-    nav ul li:hover>ul {
-        display: none;
-    }
+@media (max-width:768px){
+header{padding:35px 15px;}
+.banner{padding:65px 15px;}
+.card img{height:180px;}
+.decada h2{font-size:1.5rem;}
+#mundiales h2.text-center{font-size:1.8rem;}
+}
 
-    nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-    }
-
-    nav ul ul ul a {
-        padding: 0 80px;
-    }
-
-    nav:hover,
-    nav ul ul ul a {
-        background-color: goldenrod;
-    }
-
-    nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: goldenrod;
-    }
+@media (max-width:576px){
+.logo-img{width:85px;height:42px;}
+.card h3{font-size:1.1rem;}
+.card p{font-size:.9rem;}
 }
